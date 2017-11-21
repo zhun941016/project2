@@ -1,0 +1,54 @@
+[1017/093238:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/093238:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4fb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/093238:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/093238:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/093419:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/093419:ERROR:process_reader_win.cc(233)] ReadMemory at 0x8fb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/093419:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/093419:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/093520:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/093520:ERROR:process_reader_win.cc(233)] ReadMemory at 0x93b000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/093520:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/093520:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/094715:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/094715:ERROR:process_reader_win.cc(233)] ReadMemory at 0x12fb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/094715:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/094715:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/101339:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/101339:ERROR:process_reader_win.cc(233)] ReadMemory at 0x58b000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/101339:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/101339:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/103221:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/103221:ERROR:process_reader_win.cc(233)] ReadMemory at 0xcfb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/103221:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/103221:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/104243:ERROR:process_reader_win.cc(99)] process 21356 not found
+[1017/104243:ERROR:exception_snapshot_win.cc(87)] thread ID 22392 not found in process
+[1017/104243:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed
+[1017/104243:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/104945:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/104945:ERROR:process_reader_win.cc(233)] ReadMemory at 0x8fb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/104945:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/104945:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/154014:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/154014:ERROR:process_reader_win.cc(233)] ReadMemory at 0x6fb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/154014:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/154014:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/163232:ERROR:process_info.cc(330)] VirtualQueryEx: Access is denied. (0x5)
+[1017/163232:ERROR:process_info.cc(547)] ReadMemoryInfo failed
+[1017/163232:ERROR:process_reader_win.cc(233)] ReadMemory at 0x58f05d58 of 12 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/163232:WARNING:process_snapshot_win.cc(68)] ReadMemory ExceptionInformation failed
+[1017/163232:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed
+[1017/163232:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1017/183024:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1017/183024:ERROR:process_reader_win.cc(233)] ReadMemory at 0xafb000 of 20480 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1017/183024:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1017/183024:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1018/051315:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1018/051315:ERROR:process_reader_win.cc(233)] ReadMemory at 0x14f7000 of 36864 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1018/051315:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1018/051315:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[1018/051315:ERROR:process_info.cc(372)] NtQuerySystemInformation SystemExtendedHandleInformation: The specified information record length does not match the length required for the specified information class.  (0xc0000004)
+[1018/051315:ERROR:process_reader_win.cc(233)] ReadMemory at 0x987000 of 36864 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[1018/051315:ERROR:crash_report_exception_handler.cc(112)] WriteEverything failed
+[1018/051315:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: An attempt was made to access an exiting process.  (0xc000010a)

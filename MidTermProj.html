@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Postcard Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:300,400|Oswald:700">
+	<link rel="stylesheet" href="css/main2.css">
+	<link rel="stylesheet" href="css/main1.css">
+	<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+
+<div class="content-wrapper">
+		<img src="img/naps-logo@2x.png" class="logo" alt="NAPS Logo">
+		<nav>
+			<ul>
+				<li><a href="http://fate-go.us/">Game Download</a></li>
+				<li><a href="http://fate-go.us/world/">World</a></li>
+				<li><a href="http://fate-go.us/gallery/">Gallery</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="hero">
+	<h1>Type-Moon presents a new Fate RPG!</h1>
+	<p>The greatest Holy Grail War in human history begins!</p>
+</div>
+
+<main role="main">
+	<div class="content-wrapper">
+		<p id="press-quote">In the story, some Servants are not part of the Grail War thus don't disappear when the war is over. — fategrandorder.wikia.com</p>
+
+  <button onclick="myFunction1()">More in-game tips!</button>
+
+
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<p>
+AD. 2017.<br>The last era in which Magecraft still existed. Society was created by human hands, but Mages grasped the truth of the world. Magecraft is comprised of techniques from past humans that cannot be explained by science, while science encompasses the techniques of future humans that Magecraft cannot achieve.Researchers and scholars of both Magecraft and science have been gathered to maintain human civilization. The organization has continued to churn out splendid achievements, and thanks to Chaldea, the continued history of the human race was ensured up to 100 years in the future. </p>
+
+
+
+
+
+
+
+
+
+
+		<h2>Order VI - Sacred Round Table Region - Camelot</h2>
+		<figure>
+			<img src="img/william-dozer@2x.jpg" alt="William Dozer">
+			<figcaption>Knights of the Round Table</figcaption>
+		</figure>
+		<p>The Knights of the Round Table were characters in the legends about King Arthur. They were the best knights in King Arthur's kingdom, and lived in King Arthur's castle, Camelot. They were called the Knights of the Round Table because of a special table that was in Camelot, that was round instead of rectangular. This meant that everyone who sat around it was seen as trustworthy and equal.In order to become a Knight of the Round Table, a knight had to prove he was chivalrous (polite) enough. In the legend, the knights swore a Code of Chivalry, which is much like an oath is today.
+</p>
+	</div>
+</main>
+
+<div class="outer-wrapper">
+	<header class="clearfix">
+		<h1>Pick a Class</h1>
+		<select id="state-list">
+			<option value="usa">Choose a class</option>
+			<option value="ak">Caster</option>
+			<option value="co">Lancer</option>
+			<option value="ct">Berserker</option>
+			<option value="al">Archer</option>
+			<option value="ca">Saber</option>
+			<option value="ar">Rider</option>
+      <option value="az">Assassin</option>
+		</select>
+	</header>
+
+	<div class="main clearfix">
+		<div class="img-holder">
+			<div>
+				<img id="info-pic" src="img1/usa.jpg" alt="United States of America" width="260" height="260">
+				<p id="info-name">Fate Grand Order</p>
+			</div>
+		</div>
+		<div class="info-holder">
+			<p><strong>Caster: </strong><span id="info-abbreviation">Support Roles</span></p>
+			<p><strong>Lancer: </strong><span id="info-capitol">Gifted with extreme agility</span></p>
+			<p><strong>Berserker: </strong><span id="info-population">Crazed warriors</span></p>
+			<p><strong>Archer: </strong><span id="info-statehood">Excellent scouts</span></p>
+			<p><strong>Saber: </strong><span id="info-mammal">Agile in close quarters</span></p>
+			<p><strong>Rider: </strong><span id="info-bird">Experts of the mount</span></p>
+			<p><strong>Assassin: </strong><span id="info-tree">Skilled at stealthy operations</span></p>
+
+		</div>
+	</div>
+</div>
+<div class="outer-wrapper">
+	<div class="content-wrapper">
+		<header>
+			<h1>Servant Summoning</h1>
+			<p class="subtitle">Get the same class of servant but a different hero</p>
+		</header>
+		<main role="main">
+			<div class="first step">
+				<h2>1. Choose a Class</h2>
+				<select name="states" id="states">
+					<option selected disabled value="empty-state">Servant Class</option>
+					<option value="al">Caster</option>
+					<option value="ak">Lancer</option>
+					<option value="az">Berserker</option>
+					<option value="ar">Archer</option>
+					<option value="ca">Saber</option>
+					<option value="co">Rider</option>
+					<option value="ct">Assassin</option>
+
+				</select>
+			</div>
+			<div class="second step">
+				<h2>2. Enjoy Your New Hero!</h2>
+				<div id="postcard">
+					<p id="greeting">To Summon a New Hero</p>
+					<p id="state-heading">Choose a Class</p>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<script src="js/state-data1.js"></script>
+<script>
+	document.getElementById('state-list').onchange = function() {
+		var selected = this.value;
+		document.getElementById('info-pic').src= 'img1/'+selected+'.jpg';
+		document.getElementById('info-name').textContent = stateData[this.value].name;
+		document.getElementById('info-abbreviation').textContent = stateData[this.value].abbr;
+		document.getElementById('info-capitol').textContent = stateData[this.value].capitol;
+		document.getElementById('info-population').textContent = stateData[this.value].pop;
+		document.getElementById('info-statehood').textContent = stateData[this.value].statehood;
+		document.getElementById('info-mammal').textContent = stateData[this.value].mammal;
+		document.getElementById('info-bird').textContent = stateData[this.value].bird;
+		document.getElementById('info-tree').textContent = stateData[this.value].tree;
+		document.getElementById('info-flower').textContent = stateData[this.value].flower;
+		document.getElementById('info-nickname').textContent = stateData[this.value].nickname;
+	};
+</script>
+<footer>
+	<p>Copyright © Zhun Liu</p>
+</footer>
+
+<script>
+
+function myFunction1() {
+
+
+
+
+	var quotesArray = [
+
+
+
+
+		'Craft Essences can be equipped to your servants to increase their stats and abilities. — fategrandorder.wikia.com',
+		'Feeding Servants Experience Cards or other Servants grants experience. — fategrandorder.wikia.com',
+		'Each Servant has an Attribute that also slightly affects their performance in battle. — fategrandorder.wikia.com',
+		'Servants can also be found as enemies in quests. — fategrandorder.wikia.com',
+		'You can also burn Servants to gain QP and Mana Prisms. — fategrandorder.wikia.com',
+		'Servants are Heroic Spirits that you, as the Master, command in Battle.  — fategrandorder.wikia.com',
+		'You can Ascend Servants to increase their maximum level, slightly changing their art and battle sprites. — fategrandorder.wikia.com'
+
+
+
+
+
+	];
+	var randomNumber = Math.floor(Math.random()*quotesArray.length);
+	document.getElementById('press-quote').textContent = '“' + quotesArray[randomNumber].split(' — ')[0] + '” — ' + quotesArray[randomNumber].split(' — ')[1];
+	//console.log( 	quotesArray[randomNumber].split(' — ')[0] );
+
+
+}
+
+</script>
+<div class="container">
+	<h1>Holy Grail War Master Application</h1>
+	<p>The Holy Grail War is a competition that decides the ownership of the Holy Grail through intense battle royale. While there have been many conflicts over supposed Holy Grails in the past, this term refers to those specifically based around Masters, usually proficient magi, summoning Servants, Heroic Spirits brought forth as familiars, and meeting in battle until only one pair is left to claim the Holy Grail.</p>
+
+	<div class="form-container">
+
+
+
+
+
+
+
+
+
+
+		<form name='ftform' id='myform'>
+
+			<div class="form-section">
+				<label for="first-name">First Name:</label>
+				<input id="first-name" name="first-name" type="text">
+				<li class="rq">Enter Letters only.</li>
+
+			</div>
+
+
+			<div class="form-section">
+				<label for="last-name">Last Name:</label>
+				<input id="last-name" name="last-name" type="text">
+				<li class="rq">Enter Letters only.</li>
+			</div>
+
+
+			<div class="form-section">
+				<label for="phone">Phone:</label>
+				<input id="phone" name="phone" type="text">
+				<li class="rq">Enter numbers only.</li>
+			</div>
+
+
+			<div class="form-section">
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email">
+			</div>
+
+
+			<div class="form-section">
+				<label for="from-year" class="from-label">Servant Class:</label>
+				<select id="from-year" name="from-year">
+					<option value="blank"></option>
+					<option value="Caster">Caster</option>
+					<option value="Lancer">Lancer</option>
+					<option value="Berserker">Berserker</option>
+					<option value="Archer">Archer</option>
+					<option value="Saber">Saber</option>
+					<option value="Rider">Rider</option>
+					<option value="Assassin">Assassin</option>
+
+
+				</select>
+				</div>
+			<input id="submit" onclick="calls2()"   type="submit" value="Submit">
+
+
+
+
+
+<p id='demo'></p>
+
+
+
+		</form>
+
+<script>
+		function calls2(){
+
+
+
+
+						if(allLetter()){emailcheck()}
+						if(emailcheck()){myFunction()}
+
+
+
+
+
+				}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
+<footer>
+	<p>Made by Zhun Liu <br>Copyright © 570 Project_1 </p>
+</footer>
+
+<script>
+	var states = document.getElementById('states');
+
+	states.onchange = function() {
+		// console.log('state index: ' + states.selectedIndex);
+		// console.log('state name: ' + states.options[states.selectedIndex].text);
+		// console.log('img/' + states.value + '@2x.jpg');
+		document.getElementById('postcard').style.backgroundImage = 'url(img/' + states.value + '@2x.jpg)';
+		document.getElementById('greeting').innerHTML = 'Greetings from';
+		document.getElementById('state-heading').innerHTML = states.options[states.selectedIndex].text;
+	}
+</script>
+
+
+<script>
+function allLetter()
+{
+	var x, text;
+	x = document.getElementById("first-name").value;
+
+	var letters = /^[A-Za-z]+$/;
+	if(x.match(letters))
+	{
+		//Last name begins
+		var y, text;
+		y = document.getElementById("last-name").value;
+
+		var letters = /^[A-Za-z]+$/;
+		if(y.match(letters))
+		{
+			//phone check begins
+
+			var z, text;
+	    z =document.getElementById("phone").value;
+
+			for(var i = 0; i < z.length; i++)
+			{
+
+			if(!Number.isInteger(Number(z[i])))
+			{
+	    alert("Please input numbers only for Phone");    }
+	           return false;
+       }
+
+      //email cheks here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		}
+		else
+		{
+			alert('Please input alphabet characters only for Last Name');
+			return false;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+
+
+
+//First Name must matches
+	else
+	{
+		alert('Please input alphabet characters only for First Name');
+		return false;
+}
+
+}
+</script>
+
+
+
+
+<script>
+function emailcheck(){
+
+		var w, text;
+		w=document.getElementById("email").value;
+
+
+		 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(w))
+	{
+	return (true)
+	}
+
+
+
+
+	alert("You have entered an invalid email address!")
+	return (false)
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+<script>
+
+function myFunction() {
+
+
+
+							 var form = document.forms['myform'];
+							 var Fname = form.elements['first-name'].value;
+							 var Lname =form.elements['last-name'].value;
+							 var PhoneN = form.elements['phone'].value;
+							 var Email = form.elements['email'].value;
+							 var Class = form.elements['from-year'].value;
+
+
+
+							 var future= "Master "+Fname+" "+Lname+" with a phone number of "+PhoneN+" and an email address of "+Email+
+							 " joins the Holy Grail War with a "+Class+" servant."
+
+
+							 alert(future) ;
+
+
+						 }
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

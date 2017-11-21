@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+<div align="center">
+<h2>Credit Card Validation</h2>
+
+<p>Credit Card Number:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+
+<br><br>
+<li>9999999988880000 true</li>
+<li>6666666666661666 true</li>
+<br>
+<li>a92332119c011112 false</li>
+<li>4444444444444444 false</li>
+<li>1111111111111110 false</li>
+<li>6666666666666661 false</li>
+
+
+<p id="demo"></p>
+
+</div>
+
+
+
+
+
+<script>
+function myFunction() {
+    var x, text;
+
+// Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+
+
+
+// 16 digits
+     if(x.length !== 16)
+     {
+         text = "Input not valid(Credit card number must be 16 digits)";
+
+  }  else { text="Input OK";
+    }
+
+
+
+// digits must be numbers
+     for(var i = 0; i < x.length; i++){
+    if(!Number.isInteger(Number(x[i]))){
+      text = "Input not valid(Credit card number must be all numbers)";    }
+  }
+
+
+ // The final digit of the credit card number must be even
+  if(x[x.length - 1] % 2 !== 0){
+    text = "Input not valid(Credit card number's final digit must be even)";
+ }
+
+
+
+
+
+// Sum > 16
+ var sum = 0;
+for(var i = 0; i < x.length; i++){
+    sum += Number(x[i]);
+  }
+  if(sum <= 16){
+    text = "Input not valid(Credit card number's sum digit must be greater than 16)";
+  }
+
+
+
+
+ //no same digits
+ var obj = {};
+  for(var i = 0; i < x.length; i++){
+    obj[x[i]] = true;
+  }
+  if(Object.keys(obj).length < 2){
+    text = "Input not valid(Credit card number must not contain all same digits)";
+  }
+
+
+
+
+
+
+
+
+
+
+
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<html>
+
+  <head>
+    <title>
+      Lab : JQuery Animation
+    </title>
+
+<style>
+#divv{
+    width: 200px;
+height: 200px;
+position: relative; /* Box would not move with out being absolute or relative*/
+
+background-color: #FA6900;
+border-radius: 5px;
+text-align: center;
+}
+
+
+#target {         width: 200px;
+height: 200px;
+position: relative; /* Box would not move with out being absolute or relative*/
+
+background-color: #FA6900;
+border-radius: 5px;
+text-align: center;
+
+}
+
+.circle {
+  border-radius: 50% !important;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../../theme.css">
+<link rel="icon" type="image/png" href="../../Images/fav2.png">
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("#divv").hide();
+    });
+    $("#show").click(function(){
+        $("#divv").show();
+    });
+
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $("#move").click(function(){
+        $("#divv").animate({left: '250px'});
+    });
+});
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+$( "#op" ).click(function() {
+  $("#divv").fadeTo( "slow", 0.33 );
+});});
+</script>
+
+
+
+
+<script>
+$(document).ready(function(){
+    $("#craz").click(function(){
+        var div = $("#divv");
+        div.animate({height: '300px', opacity: '0.4'}, "slow");
+        div.animate({width: '300px', opacity: '0.8'}, "slow");
+        div.animate({height: '100px', opacity: '0.4'}, "slow");
+        div.animate({width: '100px', opacity: '0.8'}, "slow");
+    });
+});
+</script>
+
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+$('#o').click(function () {
+  $('#divv').animate({});
+});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+    $("#size").click(function(){
+        $("#divv").animate({
+            left: '250px',
+            height: '+=150px',
+            width: '+=150px'
+        });
+    });
+});
+</script>
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+    $("#o").click(function () {
+        $("#divv").addClass('circle');
+});
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </head>
+
+    <body>
+<center>
+    <br>
+    <h1>
+           JQuery Animation
+    </h1>
+   
+    <hr>
+    <br>
+
+<table width="65%">
+<tr>
+<td align="center">
+<p> Here, I will use JQuery to manipulate the CSS and make an animation to the box. Click the button to try it!</p>
+</td>
+</tr>
+</table>
+
+<div id="divv"></div>
+
+<p>Click the Buttons!</p>
+
+<hr>
+<br>
+
+<button id="move"class="button" onclick="move()">Move it!</button>
+
+ <button id="op"class="button" onclick="opa()">Change Opacity!</button>
+
+<button id="o"class="button" onclick="cir()">Into a Circle!</button>
+
+<button id="size" class="button" onclick="siz()">Change the Size!</button>
+
+<button id="craz" class="button" onclick="craz()">Lets Get CRAZY!!!</button>
+                <br>
+                <br>
+<br>
+</center>
+
+
+
+
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
